@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react'
 import Calendar from 'react-calendar'
 import 'react-calendar/dist/Calendar.css'
-import '../../index.css'
+import '../../../../src/styles/index.css'
 import './styles/style.css'
-import calendarSvg from '../../assets/img/svg/calender.svg'
+import calendarSvg from '../../../assets/svg/calendar.svg'
 
 const DatePicker = () => {
 	const [calendarDisplay, setCalendarDisplay] = useState(false)

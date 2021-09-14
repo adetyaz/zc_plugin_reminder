@@ -1,7 +1,7 @@
 import React from 'react'
 import { useAllReminders } from '../../api/reminders'
 import { ModalContextProvider } from '../../context/ModalContext'
-import AdminView from '../../components/modals/modalBase/adminView'
+import AdminCreate from '../../components/modals/modalBase/adminCreate'
 
 const UpcomingPage = () => {
 	const { fetchedData } = useAllReminders()
@@ -19,7 +19,7 @@ const UpcomingPage = () => {
 		<div>
 			<div>Upcoming</div>
 			<ModalContextProvider>
-				<AdminView />
+				<AdminCreate />
 			</ModalContextProvider>
 		</div>
 	)
